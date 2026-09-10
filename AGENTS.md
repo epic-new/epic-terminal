@@ -107,7 +107,9 @@ See `docs/references/architecture.md` for the testing strategy in full, and `doc
 
 ## Skills
 
-The repository ships skills under `.claude/skills/` covering the project workflow: `prd`, `plan`, `execute`, `fix`, `verify`, `review`, `merge`, `interview`, `prototype`, and `epic`. Prefer them over ad-hoc implementation.
+The workflow skills — `prd`, `plan`, `execute`, `fix`, `verify`, `review`, `merge`, `interview`, `prototype` and `epic` — are not files in this repository. They come from `@epicnew/skills` (terminal variant), at the release line `.epic/skills.lock.json` names, and the `epic` CLI loads them for the length of each build phase as a plugin (`epic:plan`, `epic:execute`, …). Nothing is installed into the repo. Prefer them over ad-hoc implementation.
+
+The architecture and specification format they apply are the `epic` skill's `references/architecture/terminal.md` and `references/specification/`; `docs/references/` here remains the human-readable version. Run `epic skill install` to have the skills in a session you start yourself, and `epic skill upgrade` (then commit the lock) to move to a new release line.
 
 ## Scope Note
 
