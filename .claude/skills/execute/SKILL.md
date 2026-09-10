@@ -5,7 +5,7 @@ description: Execute a terminal issue end-to-end following the Epic Command/Oper
 
 # Execute
 
-Implement a complete terminal issue following the architecture from `docs/references/terminal/architecture.md` and the spec format from `docs/references/terminal/specification.md`.
+Implement a complete terminal issue following the architecture from the epic skill's `references/architecture/terminal.md` and the spec format from its `references/specification/` modules (`index.md`, `command.md`, `operation.md`, `function.md`, `model.md`, `integration.md`).
 
 ## Architecture
 

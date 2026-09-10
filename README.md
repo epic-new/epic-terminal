@@ -55,8 +55,6 @@ cli-boilerplate/
   components/
     ink/                    # React-based terminal UI components
   docs/
-    references/
-      architecture.md       # Architecture documentation
     templates/              # Templates for new commands/operations
 ```
 
@@ -105,6 +103,6 @@ bun run build
 
 ## Documentation
 
-- [Architecture Reference](docs/references/architecture.md) - Detailed architecture documentation
+- Architecture Reference: the epic skill's `references/architecture/terminal.md`
 - [Command Template](docs/templates/command.md) - Template for new commands
 - [Operation Template](docs/templates/operation.md) - Template for new operations

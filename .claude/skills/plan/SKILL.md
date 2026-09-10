@@ -7,7 +7,7 @@ description: Update a terminal issue file with a detailed implementation plan fo
 
 Given the issue file the user provides, update it with a detailed implementation plan following the issue template below.
 
-The Specification combines behavioral rules with the technical layout: Rules (When/Then) and Examples with PreState/Steps/PostState come from `docs/references/terminal/specification.md`; Function/Integration/Model layout follows the architecture (Command → Operation → (Service) → Infrastructure) from `docs/references/terminal/architecture.md`. File paths must follow the documented layout.
+The Specification combines behavioral rules with the technical layout: Rules (When/Then) and Scenarios with PreState/Steps/PostState come from the epic skill's `references/specification/operation.md`; Function/Integration/Model layout follows the architecture (Command → Operation → (Service) → Infrastructure) from the epic skill's `references/architecture/terminal.md`. File paths must follow the documented layout.
 
 ## Issue Template
 
@@ -48,7 +48,7 @@ Directory: `commands/[command]/operations/[operation]/`
 - Then:
   - [expected outcome]
 
-### Examples
+### Scenarios
 
 #### [Scenario name]
 
@@ -150,7 +150,7 @@ Issues tend to follow this naming convention:
 2. Update the issue file following the issue template. Only update the issue file; don't start implementing yet. Instructions for the Specification and Plan you write:
    - If the operation already exists, focus on what needs to change.
    - Derive the Rules from the spec's behaviors; each Rule maps to a unit or spec test.
-   - Keep Examples concrete — include the exact CLI invocation and file paths.
-   - Respect the import rules from `docs/references/terminal/architecture.md`: Command → Operation → Service → Infrastructure. No layer may import from layers above it.
+   - Keep Scenarios concrete — include the exact CLI invocation and file paths.
+   - Respect the import rules from the epic skill's `references/architecture/terminal.md`: Command → Operation → Service → Infrastructure. No layer may import from layers above it.
    - Plan steps should be ordered so each one is independently shippable; the Why explains the rationale, the checklist breaks it into tasks.
    - Leave the Journal section empty — agents append entries as work is performed.
