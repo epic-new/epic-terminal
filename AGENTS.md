@@ -48,7 +48,7 @@ Two folders sit alongside the layered tree and are available to any layer that m
 
 `components/ink/` is UI infrastructure: interactive entries and behaviors import from it, never the reverse.
 
-See `docs/references/architecture.md` for the full reference, including import rules, the sharing hierarchy, and worked examples.
+See the `epic` skill's `references/architecture/terminal.md` for the full reference, including import rules, the sharing hierarchy, and worked examples.
 
 ## File Locations
 
@@ -99,7 +99,7 @@ Three test types, each with a distinct suffix and runner:
 
 `bunfig.toml` excludes `sandbox/**` and `.worktrees/**` from test discovery.
 
-See `docs/references/architecture.md` for the testing strategy in full, and `docs/references/specification.md` for the specification format used by issues.
+See the `epic` skill's `references/architecture/terminal.md` for the testing strategy in full, and its `references/specification/` for the specification format used by issues.
 
 ## Templates
 
